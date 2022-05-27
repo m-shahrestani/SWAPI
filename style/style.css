@@ -1,0 +1,98 @@
+/*setting borders of elements*/
+* {
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/*setting background image*/
+body {
+    background-image: url("../img/background.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    font-size: 1.3em;
+}
+
+/*setting position of main content in the middle*/
+.content {
+    border-radius: 5px;
+    background: rgba(200, 200, 150, 0.4);
+    padding: 15px;
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    width: 50%;
+}
+
+/*setting font size of title*/
+h1 {
+    font-size: 2em;
+}
+
+/*change the color of links*/
+a:link, a:hover, a:active, a:visited {
+    color: #2a45a5;
+}
+
+/*movie class"*/
+.movie {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/*starship pages*/
+.wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+/*setting starship header*/
+h2 {
+    font-size: 1.7em;
+    padding-top: 0.3em;
+}
+
+.starship {
+    /*design to put the pagination part at the end*/
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/*setting max width starship details*/
+#starship {
+    max-width: 50%;
+}
+
+/*designing next and prev buttons*/
+.pagination {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+/*designing back buttons*/
+.back {
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+/*showing details of selected starship*/
+.visible {
+    visibility: visible;
+}
+
+/*hiding the starship details*/
+.hidden {
+    visibility: hidden;
+}
+
+/*showing current active page*/
+.active-page {
+    background-color: #6c6c6c;
+}
